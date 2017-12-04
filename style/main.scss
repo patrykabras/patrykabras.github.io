@@ -1,0 +1,279 @@
+@import 'prefix';
+@import 'icon';
+$color :white;
+$colorinfo : #03A9F4;
+$info : #E1F5FE;
+$infoo : #B3E5FC;
+$MenuFoot : rgba(0, 0, 0, 0.459);
+$size_f : 5px;
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: url(../image/back1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+//~~~~~~~~~~~~~~~~~UP/\~~~~~~~~~~~~~~~~~~~~~~
+#up{
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    @include prefix((
+        border-radius: 100px
+      ), webkit moz);
+    padding: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px
+}
+//~~~~~~~~~~~~MENU~~~~~~~~~~~~~~~~~~
+#menu{
+    margin-top:50px;
+    min-height: 25px;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    background: $MenuFoot;
+    ol{
+        li:first-child{
+            border:none;
+        }
+        li{
+            display: inline-flex;
+            border-left: 1.5px solid white;
+            margin: 4px 3px;
+            
+            a{
+                display: block;
+                padding: 15px 40px;
+                color:white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+//~~~~~~~~~~~~~~~~BANNER~~~~~~~~~~~~~~~~~~~~~
+#banner{
+
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hello{
+        color: rgb(247, 247, 247);
+        font-size: 5em;
+        text-align: left;
+        letter-spacing: 10px;
+        .color_01{
+            color:rgb(117, 112, 112);
+        }
+
+        
+    }
+}
+//~~~~~~~~~~~~~ABOUT_ME~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#about_me_banner{
+    display: flex;
+    position: relative;
+    min-height: 50px;
+    background: $color;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+    img.foto_circle{
+        display: block;
+        position: absolute;
+        top:-100px;
+        @include prefix((
+            border-radius: 50px
+          ), webkit moz);
+        width: 200px;
+        height: 200px;
+    }
+}
+#about_me_info{
+    min-height: 100px;
+    background: $color;
+    padding: 30px 0px 0px 0px;
+    
+    .about_me_info{
+        padding:15px;
+        min-height: 50px;
+        background: $info;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    h1{
+        cursor: pointer;
+        display: block;
+        background: $colorinfo;
+        text-align: center;
+        padding: 15px 0px;
+        margin: 2px 0px;
+    }
+    .disnone{
+        display: none;
+    }
+    ul{
+        cursor: pointer;
+        list-style: none;
+        text-align: center;
+        margin: 1px 0px;
+        display: none;
+        li{
+            cursor: pointer;
+            padding: 10px 0px;
+            letter-spacing: 2px;
+
+        }
+        li:nth-child(2n+1) {
+            background: $info;
+        }
+        li:nth-child(2n){
+            background: $infoo;
+        }
+    }
+}
+//~~~~~~~~~~~~~~~~~~~~~~SKILL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#skill{
+    min-height: 800px;
+    padding:30px;
+    .skill{
+        letter-spacing: 10px;
+        font-size: 5em;
+        color: white;
+        hr{
+            margin: 10px;
+            width: 150px;
+            height: 5px;
+            background: white;
+        }
+        }
+    .gallery{
+        display: block;
+        padding: 50px;
+        margin: 20px;
+            .card{
+                position: relative;
+                display: inline-flex;
+                text-align: center;
+                margin: 10px;
+                width: 20em;
+                height: 20em;
+                .skill_icon{
+                    width: 8em;
+                    height: 8em;
+                    position: absolute;
+                    bottom:100px;
+                    left:100px;
+                }
+                p{
+                    text-align: center;
+                    letter-spacing: 3px;
+                    position: absolute;
+                    bottom:10em;
+                    left:80px;
+                }
+            } 
+           
+    }
+}
+//~~~~~~~~~~~~~~~~~~The Flipper~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /* entire container, keeps perspective */
+    .flip-container {
+        perspective: 1000px;
+    }
+        /* flip the pane when hovered */
+        .flip-container:hover .flipper, .flip-container.hover .flipper {
+            transform: rotateY(180deg);
+        }
+    
+    .flip-container, .front, .back {
+        width: 20em;
+        height: 20em;
+    }
+    
+    /* flip speed goes here */
+    .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    
+    /* hide back of pane during swap */
+    .front, .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    /* front pane, placed above back */
+    .front {
+        z-index: 2;
+        background: white;
+        /* for firefox 31 */
+        transform: rotateY(0deg);
+    }
+    
+    /* back, initially hidden pane */
+    .back {
+        transform: rotateY(180deg);
+        background: white;
+}
+//~~~~~~~~~~~~~~~~~~~~CONTACT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#contact{
+
+    margin: 50px 0px;
+    padding: 30px;
+    min-height: 100px;
+    background: $MenuFoot;
+    color:$color;
+    .header{
+        width: 100%;
+        text-align: center;
+        .underline{
+            margin:20px 0px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border-bottom: 3px solid white;
+        }
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        span{
+            text-align: center;
+            border: 2px solid white;
+            width: 40%;
+            padding: 0px 10px;
+            i{
+                float: left;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+        }
+    }
+
+
+}
+

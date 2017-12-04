@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Portoflio Patryk Abraś">
+        <meta name="keywords" content="Patryk,Abras,WebDesign,GlobalLogic,CV">
+        <meta name="author" content="Patryk Abraś">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV Patryk Abraś-GlobalLogic</title>
+        <link rel="StyleSheet" href="style/main.css" />
+        <script src="script/main.js"></script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <button id="up" title="Go top" onclick="go_top()">/\</button>
+        <!-- MENU START -->
+        <nav id="menu">
+            <ol>
+                <li><a href="#menu">Main</a></li>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+        <!-- MENU END -->
+        <!-- BANNER START -->
+        <header id="banner">
+            <div>
+            <h1 class="hello">I<span class="color_01">'</span>M</h1>
+            <h2 class="hello">PATRYK</h2>
+            <h2 class="hello">ABRAŚ<span class="color_01">.</span></h2>
+            </div>
+        </header>
+        <!-- BANNER END -->
+        <!-- ABOUT_ME START -->
+        <div id="about_me_banner">
+            <img id="about_me" class="foto_circle" src="image/ME.jpg"></img>
+        </div>
+        <div id="about_me_info">
+            <div class="about_me_info">
+                <p>My name is Patryk Abraś.Born 28 April 1997. I took part in code(18.11.2017) and open Day(25.11.2017), 
+                    in these two events i discovered how chearfull and interesting is the work ang staff of globallogic. 
+                    The answer to The question why i want to join is simple - i love studying new stuff and there is A lot 
+                    i would like to learn from you to expand my knowledge.
+            </p>
+            </div>
+            <h1 onclick="more_info(1)">Character Traits
+                <i class="material-icons info1">keyboard_arrow_down</i>
+                <i class="material-icons disnone infoo1">keyboard_arrow_up</i>
+            </h1>
+            <ul id="info1">
+                <li>Fast Learning</li>
+                <li>Ambitious</li>
+                <li>Cooperative</li>
+                <li>Calm</li>
+                <li>Creative</li>
+                <li>Friendly</li>
+                <li>Open-minded</li>
+                <li>Imaginative</li>
+                <li>Focused</li>
+                <li>Easygoing</li>
+            </ul>
+            <h1 onclick="more_info(2);">Education
+                <i class="material-icons info2">keyboard_arrow_down</i>
+                <i class="material-icons disnone infoo2">keyboard_arrow_up</i>
+            </h1>
+            <ul id="info2">
+                <li>Technikum Informatyczne w Lubsku 2013-2017</li>
+            </ul>
+            <h1 onclick="more_info(3)">Languages
+                <i class="material-icons info3">keyboard_arrow_down</i>
+                <i class="material-icons disnone infoo3">keyboard_arrow_up</i>
+            </h1>
+            <ul id="info3">
+                <li>English - Intermediate(B1)</li>
+                <li>German - Beginner(A1)</li>
+            </ul>
+            <h1 onclick="more_info(4);">Hobby
+                <i class="material-icons info4">keyboard_arrow_down</i>
+                <i class="material-icons disnone infoo4">keyboard_arrow_up</i>
+            </h1>
+            <ul id="info4">
+                <li>Programing</li>
+                <li>Computer Games</li>
+                <li>Watching Movies</li>
+                <li>Drawing</li>
+                <li>Board Games</li>
+                <li>Reading Fantasy Novels</li>
+                <li>Learning New Stuff</li>
+            </ul>
+            <h1 onclick="more_info(5)">Work Expierence
+                <i class="material-icons info5">keyboard_arrow_down</i>
+                <i class="material-icons disnone infoo5">keyboard_arrow_up</i>
+            </h1>
+            <ul id="info5">
+                <li>05.07.2017 - 31.07.2017 intership in "Saint-Gobain Innovative Materials Polska Sp. z o.o. Oddział Sekurit Transport Division w Żarach"</li>
+            </ul>
+            <h1 onclick="more_info(6)">Certificate
+                <i class="material-icons info6">keyboard_arrow_down</i>
+                <i class="material-icons disnone infoo6">keyboard_arrow_up</i>
+            </h1>
+            <ul id="info6">
+                <li>E-12</li>
+                <li>E-13</li>
+                <li>E-14</li>
+            </ul>
+
+        </div>
+            
+
+        <!-- ABOUT_ME END-->
+        <!-- SKILL START -->
+        <div id="skill">
+            <div class="skill">
+                <span>SKILLS</span>
+                <hr>
+            </div>
+            <div class="gallery">
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/html5.png" class="skill_icon" alt="HTML5">        
+                            </div>
+                            <div class="back">
+                                <p>HTML 5 <br />Level: Advanced </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/css3.png" class="skill_icon" alt="CSS3">
+                            </div>
+                            <div class="back">
+                                <p>CSS3 <br /> Level: Advanced </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/scss.svg" class="skill_icon" alt="SCSS">
+                            </div>
+                            <div class="back">
+                                <p>SCSS <br />Level: Medium </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/JS.png" class="skill_icon" alt="JS">
+                            </div>
+                            <div class="back">
+                                <p>JavaScript <br />Level: Medium </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/TS.png" class="skill_icon" alt="TS">
+                            </div>
+                            <div class="back">
+                                <p>TypeScript <br />Level: Medium </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/angular.png" class="skill_icon" alt="angular">
+                            </div>
+                            <div class="back">
+                                <p>Angular 4 <br />Level: Medium </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/webpack.png" class="skill_icon" alt="webpack">
+                            </div>
+                            <div class="back">
+                                <p>Webpack <br />Level: Beginner </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="image/C.png" class="skill_icon" alt="C">
+                                </div>
+                                <div class="back">
+                                    <p>C <br />Level: Medium </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="image/c++.png" class="skill_icon" alt="C++">
+                            </div>
+                            <div class="back">
+                                <p>C++ <br />Level: Medium </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="image/csharp.png" class="skill_icon" alt="C#">
+                                </div>
+                                <div class="back">
+                                    <p>C# <br />Level: Beginner </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="image/java.svg" class="skill_icon" alt="java">
+                                </div>
+                                <div class="back">
+                                    <p>Java <br />Level: Beginner </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="image/php.png" class="skill_icon" alt="php">
+                                </div>
+                                <div class="back">
+                                    <p>PHP 7 <br />Level: Medium</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="image/SQL.png" class="skill_icon" alt="SQL">
+                                </div>
+                                <div class="back">
+                                    <p>SQL <br />Level: Medium </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- SKILL END -->
+        <!-- CONTACT START -->
+        <footer id="contact">
+            <div class="header">
+                <h1>Contact</h1>
+                <hr class="underline">
+            </div>
+            <div class="info">
+                <span class="email"><i class="material-icons">email</i>   <a href="mailto:patrykabras@gmail.com">patrykabras@gmail.com</a></span>
+                <span class="phone"><i class="material-icons">phone</i>   660-585-245</span>
+            </div>
+        </footer>
+        <!-- CONTACT END -->
+    </body>
+</html>
