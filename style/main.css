@@ -1,17 +1,308 @@
-/* fallback */
 @font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2");
-}
-
-h1{
-    font-size: 80px;
-    color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
- /*# sourceMappingURL= main.css.map */
++  font-family: 'Material Icons';
++  font-style: normal;
++  font-weight: 400;
++  src: url(2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2");
++}
++
++.material-icons {
++  font-family: 'Material Icons';
++  font-weight: normal;
++  font-style: normal;
++  font-size: 24px;
++  line-height: 1;
++  letter-spacing: normal;
++  text-transform: none;
++  display: inline-block;
++  white-space: nowrap;
++  word-wrap: normal;
++  direction: ltr;
++  -webkit-font-feature-settings: 'liga';
++  -webkit-font-smoothing: antialiased;
++}
++
++* {
++  padding: 0px;
++  margin: 0px;
++}
++
++body {
++  background: url(../image/back1.jpg);
++  background-size: 100% 100%;
++  background-repeat: no-repeat;
++  background-attachment: fixed;
++}
++
++#up {
++  position: fixed;
++  z-index: 100;
++  bottom: 20px;
++  right: 20px;
++  -webkit-border-radius: 100px;
++  -moz-border-radius: 100px;
++  border-radius: 100px;
++  padding: 20px;
++  background-color: #4CAF50;
++  border: none;
++  color: white;
++  padding: 15px 20px;
++  text-align: center;
++  text-decoration: none;
++  display: block;
++  font-size: 20px;
++  cursor: pointer;
++  width: 50px;
++  height: 50px;
++}
++
++#menu {
++  margin-top: 50px;
++  min-height: 25px;
++  padding: 15px 0px;
++  display: flex;
++  justify-content: center;
++  background: rgba(0, 0, 0, 0.459);
++}
++
++#menu ol li:first-child {
++  border: none;
++}
++
++#menu ol li {
++  display: inline-flex;
++  border-left: 1.5px solid white;
++  margin: 4px 3px;
++}
++
++#menu ol li a {
++  display: block;
++  padding: 15px 40px;
++  color: white;
++  text-decoration: none;
++}
++
++#banner {
++  min-height: 600px;
++  display: flex;
++  justify-content: center;
++  align-items: center;
++}
++
++#banner .hello {
++  color: #f7f7f7;
++  font-size: 5em;
++  text-align: left;
++  letter-spacing: 10px;
++}
++
++#banner .hello .color_01 {
++  color: #757070;
++}
++
++#about_me_banner {
++  display: flex;
++  position: relative;
++  min-height: 50px;
++  background: white;
++  justify-content: center;
++  align-items: center;
++  padding: 20px 0px;
++}
++
++#about_me_banner img.foto_circle {
++  display: block;
++  position: absolute;
++  top: -100px;
++  -webkit-border-radius: 50px;
++  -moz-border-radius: 50px;
++  border-radius: 50px;
++  width: 200px;
++  height: 200px;
++}
++
++#about_me_info {
++  min-height: 100px;
++  background: white;
++  padding: 30px 0px 0px 0px;
++}
++
++#about_me_info .about_me_info {
++  padding: 15px;
++  min-height: 50px;
++  background: #E1F5FE;
++  text-align: center;
++  letter-spacing: 2px;
++  font-size: 20px;
++}
++
++#about_me_info h1 {
++  cursor: pointer;
++  display: block;
++  background: #03A9F4;
++  text-align: center;
++  padding: 15px 0px;
++  margin: 2px 0px;
++}
++
++#about_me_info .disnone {
++  display: none;
++}
++
++#about_me_info ul {
++  cursor: pointer;
++  list-style: none;
++  text-align: center;
++  margin: 1px 0px;
++  display: none;
++}
++
++#about_me_info ul li {
++  cursor: pointer;
++  padding: 10px 0px;
++  letter-spacing: 2px;
++}
++
++#about_me_info ul li:nth-child(2n+1) {
++  background: #E1F5FE;
++}
++
++#about_me_info ul li:nth-child(2n) {
++  background: #B3E5FC;
++}
++
++#skill {
++  min-height: 800px;
++  padding: 30px;
++}
++
++#skill .skill {
++  letter-spacing: 10px;
++  font-size: 5em;
++  color: white;
++}
++
++#skill .skill hr {
++  margin: 10px;
++  width: 150px;
++  height: 5px;
++  background: white;
++}
++
++#skill .gallery {
++  display: block;
++  padding: 50px;
++  margin: 20px;
++}
++
++#skill .gallery .card {
++  position: relative;
++  display: inline-flex;
++  text-align: center;
++  margin: 10px;
++  width: 20em;
++  height: 20em;
++}
++
++#skill .gallery .card .skill_icon {
++  width: 8em;
++  height: 8em;
++  position: absolute;
++  bottom: 100px;
++  left: 100px;
++}
++
++#skill .gallery .card p {
++  text-align: center;
++  letter-spacing: 3px;
++  position: absolute;
++  bottom: 10em;
++  left: 80px;
++}
++
++/* entire container, keeps perspective */
++.flip-container {
++  perspective: 1000px;
++}
++
++/* flip the pane when hovered */
++.flip-container:hover .flipper, .flip-container.hover .flipper {
++  transform: rotateY(180deg);
++}
++
++.flip-container, .front, .back {
++  width: 20em;
++  height: 20em;
++}
++
++/* flip speed goes here */
++.flipper {
++  transition: 0.6s;
++  transform-style: preserve-3d;
++  position: relative;
++}
++
++/* hide back of pane during swap */
++.front, .back {
++  backface-visibility: hidden;
++  position: absolute;
++  top: 0;
++  left: 0;
++}
++
++/* front pane, placed above back */
++.front {
++  z-index: 2;
++  background: white;
++  /* for firefox 31 */
++  transform: rotateY(0deg);
++}
++
++/* back, initially hidden pane */
++.back {
++  transform: rotateY(180deg);
++  background: white;
++}
++
++#contact {
++  margin: 50px 0px;
++  padding: 30px;
++  min-height: 100px;
++  background: rgba(0, 0, 0, 0.459);
++  color: white;
++}
++
++#contact .header {
++  width: 100%;
++  text-align: center;
++}
++
++#contact .header .underline {
++  margin: 20px 0px;
++  margin-left: auto;
++  margin-right: auto;
++  width: 80%;
++  border-bottom: 3px solid white;
++}
++
++#contact .info {
++  display: flex;
++  justify-content: center;
++  align-items: center;
++  flex-direction: column;
++}
++
++#contact .info span {
++  text-align: center;
++  border: 2px solid white;
++  width: 40%;
++  padding: 0px 10px;
++}
++
++#contact .info span i {
++  float: left;
++}
++
++#contact .info span a {
++  text-decoration: none;
++  color: white;
++}
